@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import carimg from './car1.png';
 function App() {
