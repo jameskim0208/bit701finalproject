@@ -1,2 +1,22 @@
+#port설정
 server:
   port: 9002
+spring: 
+#mysql setting
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    #url: jdbc:mysql://localhost:3306/bit701?serverTimezone=Asia/Seoul
+    url: jdbc:mysql://db-h04kd-kr.vpc-pub-cdb.ntruss.com:3306/studydb?severTimezone=Asia/Seoul
+    #url: jdbc:mysql://db-g66k8-kr.vpc-pub-cdb.ntruss.com:3306/bit701?serverTimezone=Asia/Seoul
+    username: study
+    password: bit!@#123
+  servlet:
+    multipart:
+      max-file-size:
+        20MB
+
+#mybatis setting
+mybatis:
+  type-aliases-package: data.dto
+  mapper-locations:
+  - /mapper/**/*.xml

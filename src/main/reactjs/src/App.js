@@ -1,5 +1,5 @@
 import './App.css';
-import carimg from './car1.png';
+import carimg from './image/car1.png';
 function App() {
   return (
     <div className="App">
